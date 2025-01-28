@@ -1,0 +1,7 @@
+T G G G - C A - - - G C G G T A A - T - C - - -
+T G G - - C A - - - G C G G T A A - T - C - - -
+T G G G - C A - - - G C G G T A - - T - C - - -
+T G G G - C A A - - G C G G T A A - T - C - - -
+T G G - - C A - - - G C G G T A A - T - C - - -
+T G G G - C A - - - G C G - T A A - T - C - - -
+T G G G - C A - - - G C G - T A A - T A C - - -
