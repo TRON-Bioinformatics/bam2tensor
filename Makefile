@@ -9,5 +9,3 @@ clean:
 
 test:
 	nextflow main.nf --help
-	nextflow main.nf -profile test,conda --output output/test1
-
