@@ -72,7 +72,7 @@ process bam2tensor {
     publishDir "${params.publish_dir}", mode:"move"
     tag "${name}"
 
-    conda (params.enable_conda ? 'environment.yml' : null)
+    conda (params.enable_conda ? "${projectDir}/environment.yml" : null)
 
     input:
 	  tuple val(name), val(dataset), val(replicates), file(tma), file(tma_ind), file(nor), file(nor_ind), val(candidates)
