@@ -80,7 +80,7 @@ process bam2tensor {
 
     """
 
-    python src/run.py \
+    python $projectDir/src/run.py \
     --out ${params.publish_dir} \
     --tumor_bam ${tma} \
     --normal_bam ${nor} \
