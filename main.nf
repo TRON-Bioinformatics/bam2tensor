@@ -72,7 +72,7 @@ process bam2tensor {
     publishDir "${params.publish_dir}", mode:"move"
     tag "${name}"
 
-    conda (params.enable_conda ? 'environment.yml' : null)
+    conda (params.enable_conda ? '$projectDir/environment.yml' : null)
 
 
     input:
