@@ -72,7 +72,7 @@ process bam2tensor {
     publishDir "${params.publish_dir}", mode:"move"
     tag "${name}"
 
-    conda (params.enable_conda ? "conda-forge::zlib==1.3.1 bioconda::samtools==1.21 bioconda::bedtools=2.31.1 bioconda::bcftools==1.21 conda-forge::mkl==2024.0.0 pytorch::pytorch==2.0.1 conda-forge::fire==0.7.0 bioconda::pybedtools==0.11.0 bioconda::pysam==0.23.0 conda-forge::matplotlib==3.10.0 conda-forge::numpy==1.24.3 conda-forge::pandas==1.5.3 conda-forge::seaborn==0.13.2" : null)
+    conda "conda-forge::zlib==1.3.1 bioconda::samtools==1.21 bioconda::bedtools=2.31.1 bioconda::bcftools==1.21 conda-forge::mkl==2024.0.0 pytorch::pytorch==2.0.1 conda-forge::fire==0.7.0 bioconda::pybedtools==0.11.0 bioconda::pysam==0.23.0 conda-forge::matplotlib==3.10.0 conda-forge::numpy==1.24.3 conda-forge::pandas==1.5.3 conda-forge::seaborn==0.13.2"
 
     input:
 	  tuple val(name), val(dataset), val(replicates), file(tma), file(tma_ind), file(nor), file(nor_ind), val(candidates)
